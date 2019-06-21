@@ -11,4 +11,3 @@ C:\Users\rtan2\app\UserRegistration\UserRegistration\UserRegistration\obj\Debug\
 C:\Users\rtan2\app\UserRegistration\UserRegistration\UserRegistration\obj\Debug\netcoreapp2.2\UserRegistration.RazorTargetAssemblyInfo.cache
 C:\Users\rtan2\app\UserRegistration\UserRegistration\UserRegistration\obj\Debug\netcoreapp2.2\UserRegistration.dll
 C:\Users\rtan2\app\UserRegistration\UserRegistration\UserRegistration\obj\Debug\netcoreapp2.2\UserRegistration.pdb
-C:\Users\rtan2\app\UserRegistration\UserRegistration\UserRegistration\obj\Debug\netcoreapp2.2\UserRegistration.csprojAssemblyReference.cache

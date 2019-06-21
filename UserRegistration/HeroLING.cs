@@ -39,6 +39,20 @@ namespace UserRegistration
             }
             
         }
+        public void deleteallHero()
+        {
+
+            for (int i = 1; i < heroContext.Heros.LongCount(); i++)
+            {
+                if (heroContext.Heros.Find(i) != null) {
+                    var hero = heroContext.Heros.Find(i);
+                    heroContext.Heros.Remove(hero);
+                    
+                }
+                heroContext.SaveChanges();
+            }
+
+        }
 
         private class HeroNameGenerator {
 

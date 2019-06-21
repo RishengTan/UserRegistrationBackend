@@ -16,6 +16,7 @@ using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using UserRegistration.Email;
 using UserRegistration.Models;
+using UserRegistration.Models.Client;
 //using UserRegistration.Models.HeroCompany;
 
 namespace UserRegistration
@@ -37,6 +38,7 @@ namespace UserRegistration
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             services.AddDbContext<UserContext>(options => options.UseSqlServer(Configuration.GetConnectionString("connection")));
             services.AddDbContext<HeroContext>(options => options.UseSqlServer(Configuration.GetConnectionString("HeroDb")));
+            services.AddDbContext<ClientContext>(options => options.UseSqlServer(Configuration.GetConnectionString("MDNdemo")));
             //services.AddDbContext<HeroCompanyContext>(options => options.UseSqlServer(Configuration.GetConnectionString("HeroDb")));
             services.AddTransient<IEmailSender, EmailSender>();
             services.Configure<AuthMessageSenderOptions>(Configuration);
